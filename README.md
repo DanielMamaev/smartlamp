@@ -1,1 +1,3 @@
-# smartlamp
+# SmartLamp
+
+[сайт](https://yandex.ru/) 
