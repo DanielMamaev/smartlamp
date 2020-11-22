@@ -11,13 +11,10 @@ import os
 
 import plyer
 
-import design  # Это наш конвертированный файл дизайна
+import design
 
 import paho.mqtt.client as mqtt
-#postman.cloudmqtt.com
-#17110
-#obtxfdbf
-#6uD0FYaNQT5K
+
 
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
@@ -78,9 +75,6 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.sign_check = ""
 
 
-        """if (mov == 8)sign_check = true;
-        if (mov == 9)sign_check = false;"""
-
     def language_mode(self):
         if self.comboBox_language.currentIndex() == 0:
             self.config.set("SETTINGS", "language", "en")
@@ -96,13 +90,25 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
             self.config.set("SETTINGS", "mode", "light")
             with open(self.config_namef, 'w') as configfile:
                 self.config.write(configfile)
-            self.tab_main.setStyleSheet("QWidget{ background-color: white;}")
+
+            self.tabWidget.setStyleSheet("QWidget{color: white;}")
+            self.tabWidget.setStyleSheet("QTabWidget{color: black;}")
+            self.tab_main.setStyleSheet("QWidget{ background-color: white; color: white;} ")
             self.centralwidget.setStyleSheet("QWidget{ background-color: Gainsboro;}")
+            self.pushButton_exit.setStyleSheet("QWidget{ background-color: red; color: Black;}")
+            self.pushButton_disconnect.setStyleSheet("QWidget{ background-color: red; color: Black;}")
+            self.pushButton_connect.setStyleSheet("QWidget{ background-color: green; color: Black;}")
             self.label_temp.setStyleSheet("QWidget{ color: black;}")
             self.label_hum.setStyleSheet("QWidget{ color: black;}")
             self.label_dis.setStyleSheet("QWidget{ color: black;}")
             self.label_bar.setStyleSheet("QWidget{ color: black;}")
             self.label_chance.setStyleSheet("QWidget{ color: black;}")
+            self.lineEdit_host.setStyleSheet("QWidget{ background-color: Gainsboro; }")
+            self.lineEdit_port.setStyleSheet("QWidget{ background-color: Gainsboro; }")
+            self.lineEdit_username.setStyleSheet("QWidget{ background-color: Gainsboro; }")
+            self.lineEdit_password.setStyleSheet("QWidget{ background-color: Gainsboro; }")
+            self.comboBox_background.setStyleSheet("QWidget{ color: black;}")
+            self.comboBox_language.setStyleSheet("QWidget{ color: black;}")
 
 
         if self.comboBox_background.currentIndex() == 1:

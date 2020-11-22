@@ -10,6 +10,18 @@
     <height>550</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>1122</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1122</width>
+    <height>550</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>SmartLamp_Desktop</string>
   </property>
@@ -617,8 +629,8 @@
          </property>
          <property name="iconSize">
           <size>
-           <width>45</width>
-           <height>45</height>
+           <width>40</width>
+           <height>40</height>
           </size>
          </property>
          <property name="autoRaise">
@@ -629,7 +641,7 @@
        <item>
         <widget class="QSlider" name="verticalSlider_brig">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -748,7 +760,7 @@
      <widget class="Line" name="line_4">
       <property name="geometry">
        <rect>
-        <x>770</x>
+        <x>780</x>
         <y>0</y>
         <width>20</width>
         <height>551</height>
@@ -842,9 +854,9 @@
    <widget class="QCheckBox" name="checkBox_autoconnect">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>280</y>
-      <width>121</width>
+      <x>930</x>
+      <y>270</y>
+      <width>161</width>
       <height>27</height>
      </rect>
     </property>
@@ -864,9 +876,9 @@
    <widget class="QComboBox" name="comboBox_language">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>340</y>
-      <width>201</width>
+      <x>950</x>
+      <y>410</y>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -890,15 +902,16 @@
    <widget class="QPushButton" name="pushButton_exit">
     <property name="geometry">
      <rect>
-      <x>1020</x>
+      <x>950</x>
       <y>520</y>
-      <width>93</width>
-      <height>28</height>
+      <width>101</width>
+      <height>27</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Reference Sans Serif</family>
+      <pointsize>10</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -913,9 +926,9 @@
    <widget class="QComboBox" name="comboBox_background">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>410</y>
-      <width>201</width>
+      <x>950</x>
+      <y>450</y>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -1015,15 +1028,16 @@
    <widget class="QPushButton" name="pushButton_connect">
     <property name="geometry">
      <rect>
-      <x>1037</x>
-      <y>280</y>
-      <width>71</width>
+      <x>950</x>
+      <y>300</y>
+      <width>101</width>
       <height>27</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Reference Sans Serif</family>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
@@ -1033,15 +1047,16 @@
    <widget class="QPushButton" name="pushButton_disconnect">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>520</y>
-      <width>88</width>
+      <x>950</x>
+      <y>340</y>
+      <width>101</width>
       <height>27</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>MS Reference Sans Serif</family>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
